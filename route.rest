@@ -1,0 +1,32 @@
+GET http://localhost:3000/vehicleRepo
+
+###
+
+GET http://localhost:3000/vehicleRepo/1
+
+###
+
+POST http://localhost:3000/vehicleRepo
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Lamborghini",
+    "model": "Huracán",
+    "price": 300 000,
+    "condition": "New"
+}
+
+###
+
+DELETE http://localhost:3000/vehicleRepo/1
+
+###
+
+PATCH  http://localhost:3000/vehicleRepo/1
+Content-Type: application/json
+
+{
+    "name": "Lamborghino",
+    "condition": "Used"
+}
